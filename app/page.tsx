@@ -24,7 +24,7 @@ export default function Home() {
             Save and see your changes instantly.
           </li>
           <li className="tracking-[-.01em]">
-            Update Workflow
+            Update Workflow 2
           </li>
         </ol>
 
