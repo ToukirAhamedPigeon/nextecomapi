@@ -1,5 +1,6 @@
 'use client'
 
+import * as React from "react";
 import { useClerk } from '@clerk/nextjs'
 
 export const SignOutButton = () => {
