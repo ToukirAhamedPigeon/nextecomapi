@@ -1,5 +1,6 @@
 import * as React from "react";
 import Image from "next/image";
+import { SignOutButton } from "./components/SignOutButton";
 
 export default function Home() {
   return (
@@ -26,6 +27,9 @@ export default function Home() {
           </li>
           <li className="tracking-[-.01em]">
             Update Workflow 4
+          </li>
+          <li className="tracking-[-.01em]">
+            <SignOutButton />
           </li>
         </ol>
 

@@ -1,0 +1,14 @@
+{
+    "token":{
+        "template":"admin_token",
+        "token":"eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDIyMkFBQSIsImtpZCI6Imluc18ydUhBa2J1b0dRT0JWVE4xdEJ1RmIzZXNEWUkiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjIwNTczMjA2NjQsImlhdCI6MTc0MTk2MDY2NCwiaXNzIjoiaHR0cHM6Ly9yaWdodC1jb2JyYS04OS5jbGVyay5hY2NvdW50cy5kZXYiLCJqdGkiOiJlMDE2MTA5YTE1OGFjYmJjNDJjMyIsIm1ldGFkYXRhIjp7InJvbGUiOiJhZG1pbiJ9LCJuYmYiOjE3NDE5NjA2NTksInN1YiI6InVzZXJfMnVISjN0eTRpbnhDSVR6azhzSHB4R3FLbU1zIn0.HWsO9rGE1QywsNwIH_mdvcSobXHNPSIwNlfG_WGe8qgXi7r-LDoJrzHUd58ARdvZ33E5SptqYgeafgc_GZhZzgGP9hJMrfEHlSRJWkeHFMNroDpxXJwL5U1HLFWyk-j4X-g3Zhm0z-Hh2YD_KJ4hzneQBTdIwGlP50Zqv0I8QC7bXULzz90OLWrf-r0hKBvNJ-_Ca-h4z_1E4QnExrvMeP97yAEIBX78TS-I2wwRqHAaxtmQBz0pE4_1X6zbIPoZRM_Ci9ct5gp2fS34-IFYW6Xv6y8wT9XWYzUX1lOQ39cCavuvLLLagCcc2_8rh9KQk5fvmJ67-PZAkc4VWh9kNg",
+        "user_id":"user_2uHJ3ty4inxCITzk8sHpxGqKmMs"
+    },
+    "brand":{
+        "name":"Brand 1",
+        "description":"Brand 1 description",
+        "slug":"brand-1",
+        "image":"http://localhost:3000/",
+        "user_id":"user_2uHJ3ty4inxCITzk8sHpxGqKmMs"
+    }
+}
