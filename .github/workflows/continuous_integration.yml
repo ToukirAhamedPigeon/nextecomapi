@@ -19,9 +19,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 22.X
+          node-version: 20.x  # ✅ Use stable LTS version
+          cache: 'npm'  # ✅ Cache dependencies for faster builds
       - name: Install Dependencies
-        run: npm install
+        run: npm install --frozen-lockfile  # ✅ Ensures reproducible installs
       - name: Build
         run: npm run build
       - name: Checkout TypeScript Errors
