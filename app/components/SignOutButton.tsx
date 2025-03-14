@@ -3,7 +3,7 @@
 import * as React from "react";
 import { useClerk } from '@clerk/nextjs'
 
-export const SignOutButton = () => {
+export const SignOutButton = () => { 
   const { signOut } = useClerk()
 
   return (
