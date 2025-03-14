@@ -3,6 +3,7 @@ import Brand from "@/models/Brand";
 import { isValidObjectId } from "mongoose";
 import { NextResponse } from "next/server";
 
+//git updated
 export async function GET(req:Request){
     try {
         await dbConnect();
