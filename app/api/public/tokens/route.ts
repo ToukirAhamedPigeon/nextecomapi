@@ -24,6 +24,7 @@ export async function GET(req:Request){
     }
     return NextResponse.json({message:"data found",data},{status:200});
    } catch (error) {
+    console.log(error);
     return NextResponse.json({message:"error"},{status:500});
    }
 }
