@@ -4,6 +4,8 @@ import { brandValidationSchema } from "@/types/schemas";
 import { isValidObjectId } from "mongoose";
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic"; // Ensures the API route runs dynamically
+
 //create brand
 export async function POST(req:Request){
     try {

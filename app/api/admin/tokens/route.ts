@@ -3,6 +3,8 @@ import token from "@/models/Token";
 import { tokenValidationSchema } from "@/types/schemas";
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic"; // Ensures the API route runs dynamically
+
 export async function GET(){
     await dbConnect();
     return Response.json({message:"connected"},{status:200});
