@@ -2,6 +2,9 @@ name: Vercel Preview Deployment
 env:
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID_TEST }}
+  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: ${{ secrets.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY }}
+  MONGODB_URI: ${{ secrets.MONGODB_URI }}
+  NPM_FLAGS: "--legacy-peer-deps"
 on:
   workflow_run:
     workflows: ['CI']
@@ -18,7 +21,11 @@ jobs:
         run: npm install --global vercel@latest
       - name: Pull Vercel Environment Information
         run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Verify Environment Variables
+        run: |
+          echo "Clerk Publishable Key: $NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY"
+          echo "MongoDB URI: $MONGODB_URI"
       - name: Build Project Artifacts
-        run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
+        run: vercel build --token=${{ secrets.VERCEL_TOKEN }} || exit 1
       - name: Deploy Project Artifacts to Vercel
         run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
