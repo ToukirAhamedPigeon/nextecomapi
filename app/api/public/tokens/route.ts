@@ -2,6 +2,8 @@ import { dbConnect } from "@/lib/dbConnect";
 import { NextResponse } from "next/server";
 import Token from "@/models/Token";
 
+export const dynamic = "force-dynamic"; // Ensures the API route runs dynamically
+
 export async function GET(req:Request){
    try {
     await dbConnect();

@@ -3,6 +3,8 @@ import Brand from "@/models/Brand";
 import { isValidObjectId } from "mongoose";
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic"; // Ensures the API route runs dynamically
+
 //git updated
 export async function GET(req:Request){
     try {
