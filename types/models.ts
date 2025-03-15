@@ -443,7 +443,7 @@ export type TypePaymentIntent = {
     type: string;
   };
   client_secret: {
-    type: string;
+    type: string; 
   };
   created: {
     type: string;
