@@ -5,7 +5,7 @@ export default clerkMiddleware(async (auth, req) => {
   // Handle preflight requests (OPTIONS)
   if (req.method === "OPTIONS") {
     return new NextResponse(null, {
-      status: 204,
+      status: 204, 
       headers: {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
