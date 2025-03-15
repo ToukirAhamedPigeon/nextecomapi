@@ -1,18 +1,9 @@
 import * as React from "react";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { GeistSans } from 'geist/font/sans';
+import { GeistMono } from 'geist/font/mono';
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -28,7 +19,7 @@ export default function RootLayout({
     <ClerkProvider signInFallbackRedirectUrl="/">
       <html lang="en">
         <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+          className={`${GeistSans.className} ${GeistMono.variable} antialiased`}
         >
           {children}
         </body>
