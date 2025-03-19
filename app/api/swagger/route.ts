@@ -8,7 +8,11 @@ const options = {
       version: "1.0.0",
       description: "Auto-generated Swagger API documentation for Next.js",
     },
-    servers: [{ url: "http://localhost:3000" },{ url: "https://nextecomapipre.pigeonic.com"},{ url: "https://nextecomapi.pigeonic.com"}], // Update this in production
+    servers: [
+      // { url: "http://localhost:3000" },
+      { url: "https://nextecomapipre.pigeonic.com"}
+      // { url: "https://nextecomapi.pigeonic.com"}
+      ], // Update this in production
   },
   apis: ["./app/api/**/*.ts"], // Ensure this path is correct
 };
