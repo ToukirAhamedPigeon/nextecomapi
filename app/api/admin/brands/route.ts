@@ -102,9 +102,13 @@ export async function PUT(req:Request){
  *                   type: string
  *                   example: brand deleted
  *               type: object
-                        status: "draft" | "publish" | "archive";
-                        createdAt: Date;
-                        };
+ *               properties:
+ *                 status:
+ *                   type: string
+ *                   example: draft
+ *                 createdAt:
+ *                   type: string
+ *                   example: 2021-01-01
  *               properties:
  *                 message:
  *                   type: string
