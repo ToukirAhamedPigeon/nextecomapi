@@ -7,6 +7,24 @@ import { NextResponse } from "next/server";
 export const dynamic = "force-dynamic"; // Ensures the API route runs dynamically
 
 //create brand
+
+/**
+ * @swagger
+ * /api/admin/brands:
+ *   post:
+ *     summary: Creates a new brand
+ *     responses:
+ *       200:
+ *         description: Success
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: brand created
+ */
 export async function POST(req:Request){
     try {
         await dbConnect();
@@ -22,6 +40,24 @@ export async function POST(req:Request){
     }
 }
 //update brand
+
+/**
+ * @swagger
+ * /api/admin/brands:
+ *   put:
+ *     summary: Updates a brand
+ *     responses:
+ *       200:
+ *         description: Success
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: brand updated
+ */
 export async function PUT(req:Request){
     try {
         await dbConnect();
@@ -43,6 +79,24 @@ export async function PUT(req:Request){
 }
 
 //delete brand
+
+/**
+ * @swagger
+ * /api/admin/brands:
+ *   delete:
+ *     summary: Deletes a brand
+ *     responses:
+ *       200:
+ *         description: Success
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: brand deleted
+ */
 export async function DELETE(req:Request){
     try {
         await dbConnect();
