@@ -92,6 +92,19 @@ export async function PUT(req:Request){
  *           application/json:
  *             schema:
  *               type: object
+ *               properties:        
+ *                 message:
+ *                   type: string
+ *                   example: brand deleted
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: brand deleted
+ *               type: object
+                        status: "draft" | "publish" | "archive";
+                        createdAt: Date;
+                        };
  *               properties:
  *                 message:
  *                   type: string
