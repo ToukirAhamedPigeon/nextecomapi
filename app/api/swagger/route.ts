@@ -10,7 +10,7 @@ const options = {
     },
     servers: [
       // { url: "http://localhost:3000" },
-      { url: "https://nextecomapipre.pigeonic.com"}
+      { url: process.env.NEXT_PUBLIC_API_URL },
       // { url: "https://nextecomapi.pigeonic.com"}
       ], // Update this in production
   },
