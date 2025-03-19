@@ -17,7 +17,7 @@ const options = {
 const swaggerSpec = swaggerJSDoc(options);
 
 // Export the GET function for Next.js App Router
-export async function GET(req: NextRequest) {
+export async function GET() {
   return new Response(JSON.stringify(swaggerSpec), {
     headers: { "Content-Type": "application/json" },
     status: 200,
