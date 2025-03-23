@@ -1,6 +1,26 @@
 {
     "openapi": "3.0.0",
     "paths": {
+        "/api/public/brands": {
+            "get": {
+                "summary": "Get all brands",
+                "responses": {
+                    "200": {
+                        "description": "Brands fetched successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Brand"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/api/admin/brands": {
             "post": {
                 "summary": "Create a new brand",
