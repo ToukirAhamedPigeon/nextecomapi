@@ -6,7 +6,7 @@ export default function ApiDocs() {
   return (
     <div className="min-h-screen p-4 bg-gray-50">
       <h1 className="text-2xl font-bold text-center my-4">API Documentation</h1>
-      <SwaggerUI url="/api/swagger" />
+      <SwaggerUI url="swagger.json" />
     </div>
   );
 }

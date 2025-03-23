@@ -24,9 +24,11 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
     "swagger-ui-react": "^5.20.1",
     "tailwind-merge": "^3.0.2",
     "tailwindcss-animate": "^1.0.7",
+    "yamljs": "^0.3.0",
     "zod": "^3.24.2"
   },
   "devDependencies": {
@@ -40,7 +42,9 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.8",
     "@types/swagger-ui-react": "^5.18.0",
+    "@types/yamljs": "^0.2.34",
     "eslint": "^9.22.0",
     "eslint-config-next": "^15.2.2-canary.6",
     "eslint-plugin-react": "^7.37.4",
